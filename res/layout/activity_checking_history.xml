@@ -1,0 +1,524 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundthem"
+    tools:context=".SavingsHistory" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="25dp" >
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checking Account"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:id="@+id/SavingsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitetable"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp" >
+
+            <TextView
+                android:id="@+id/TextView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:paddingLeft="5dp"
+                android:text="Balance:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/CheckingCheckingBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:text="$???.??"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp" >
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:visibility="invisible" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ltable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@drawable/whitetable"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:paddingTop="0dp" >
+
+            <LinearLayout
+                android:id="@+id/CheckingLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="16dp"
+                 >
+
+                <TextView
+                    android:id="@+id/CheckingDate1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Checking:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/CheckingPlace1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/CheckingAmount1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight=".5"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="$???.??"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/CheckingDate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:paddingLeft="5dp"
+                    android:text="Checking:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/CheckingPlace2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/CheckingAmount2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight=".5"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="$???.??"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout09"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/CheckingDate3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:paddingLeft="5dp"
+                    android:text="Checking:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/CheckingPlace3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/CheckingAmount3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight=".5"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="$???.??"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"               
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/CheckingDate4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:paddingLeft="5dp"
+                    android:text="Checking:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/CheckingPlace4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/CheckingAmount4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight=".5"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="$???.??"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout07"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/CheckingDate5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:paddingLeft="5dp"
+                    android:text="Checking:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/CheckingPlace5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/CheckingAmount5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight=".5"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="$???.??"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/CheckingDate6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:paddingLeft="5dp"
+                    android:text="Checking:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/CheckingPlace6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/CheckingAmount6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight=".5"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="$???.??"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/CheckingDate7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:paddingLeft="5dp"
+                    android:text="Checking:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/CheckingPlace7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/CheckingAmount7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight=".5"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="$???.??"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/CheckingDate8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:paddingLeft="5dp"
+                    android:text="Checking:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/CheckingPlace8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/CheckingAmount8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight=".5"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="$???.??"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/CheckingDate9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:paddingLeft="5dp"
+                    android:text="Checking:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/CheckingPlace9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/CheckingAmount9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight=".5"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="$???.??"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/CheckingDate10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:paddingLeft="5dp"
+                    android:text="Checking:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/CheckingPlace10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/CheckingAmount10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight=".5"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="$???.??"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

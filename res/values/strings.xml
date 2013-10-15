@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">abcBank</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_balances">Balances</string>
+    <string name="title_activity_savings_history">SavingsHistory</string>
+    <string name="title_activity_checking_history">CheckingHistory</string>
+    <string name="title_activity_credit_history">CreditHistory</string>
+    <string name="title_activity_transfer">Transfer</string>
+    <string name="title_activity_pay_card">PayCard</string>
+
+</resources>

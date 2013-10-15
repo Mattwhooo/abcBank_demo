@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/balances"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundthem"
+    tools:context=".Balances" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="25dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Balances"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:id="@+id/SavingsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_default"
+            android:clickable="false"
+            android:onClick="balanceSavingsBalance"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/TextView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="Savings:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/BalanceSavingsBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.24"
+                android:clickable="false"
+                android:gravity="right|center_vertical"
+                android:minWidth="50dp"
+                android:text="$???.??"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#0276FD"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/CheckingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_default"
+            android:clickable="true"
+            android:onClick="balanceCheckingBalance"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/TextView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Checking:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/BalanceCheckingBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="0.52"
+                android:clickable="false"
+                android:gravity="right|center_vertical"
+                android:text="$???.??"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#0276FD"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/CreditLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_default"
+            android:clickable="true"
+            android:onClick="balanceCreditBalance"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/TextView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Credit Card:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/BalanceCreditBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.92"
+                android:clickable="false"
+                android:gravity="right|center_vertical"
+                android:text="$???.??"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#0276FD"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingTop="32dp" >
+
+            <Button
+                android:id="@+id/BalanceTransferButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red"
+                android:onClick="transfer"
+                android:paddingBottom="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:text="Transfers"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp" >
+
+            <Button
+                android:id="@+id/BalancePayCardButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:text="Pay Credit Card"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp" >
+
+            <Button
+                android:id="@+id/BalanceLogOffButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:text="Log Off"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:layout_centerInParent="true"
+        android:maxHeight="10dp"
+        android:maxWidth="10dp"
+        android:minHeight="100dp"
+        android:minWidth="100dp" />
+
+</RelativeLayout>
