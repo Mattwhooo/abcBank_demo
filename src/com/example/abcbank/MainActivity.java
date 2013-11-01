@@ -20,10 +20,16 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 public class MainActivity extends Activity implements NetworkStudListener {
+	Boolean validLogin;
 	Button loginButton;
 	EditText usernameField;
 	EditText passwordField;
 	ProgressBar swerl;
+	String [] usernames = {
+		"Demo",
+		"Alex",
+		"Mary"
+	};
 
 	NetworkStud stud = new NetworkStud();
 	@Override
@@ -37,7 +43,7 @@ public class MainActivity extends Activity implements NetworkStudListener {
 		usernameField = (EditText) this.findViewById(id.loginfield);
 		passwordField = (EditText) this.findViewById(R.id.passwordField);
 		swerl = (ProgressBar) this.findViewById(R.id.progressBar1);
-		
+		validLogin = false;
 		
 		swerl.setVisibility(View.INVISIBLE);// copy
 		
@@ -47,10 +53,17 @@ public class MainActivity extends Activity implements NetworkStudListener {
 	
 	public void onClick(View v) {
 		
+		// Check user name against username array.
+		for(int row = 0; row < usernames.length; row++){
+			if (usernameField.getText().toString().equalsIgnoreCase(usernames[row])){
+				validLogin = true;
+				break;
+			}
+		}
 		
 		// TODO Auto-generated method stub
 		
-	if (usernameField.getText().toString().equalsIgnoreCase("Demo") && passwordField.getText().toString().equalsIgnoreCase("1234")){
+	if (validLogin == true && passwordField.getText().toString().equalsIgnoreCase("demo1234")){
 		swerl.setVisibility(View.VISIBLE);
 		//lock out user to not edit anything
 		usernameField.setEnabled(false);
